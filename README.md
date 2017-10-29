@@ -9,6 +9,8 @@ How to use the function :
 
  var parData = new List<Tuple<string, OracleDbType, ParameterDirection, dynamic>>();
 
- parData.Add(new Tuple<string, OracleDbType, ParameterDirection, dynamic>("ParameterName", OracleDbType.Int32, ParameterDirection.Input, "ParameterValue"));
+ parData.Add(new Tuple<string, OracleDbType, ParameterDirection, dynamic>("ParameterName", OracleDbType.Int32,       										ParameterDirection.Input, "ParameterValue"));
+ 
  parData.Add(new Tuple<string, OracleDbType, ParameterDirection, dynamic>("ParameterName", OracleDbType.Int32, ParameterDirection.Output, "string.Empty OR Null ""));
+ 
   List<Tuple<string, dynamic>> ReqDataResult = Helper.DBProcedure("Connection string for oracle DB", "PackageName.ProcedureName", parData);
